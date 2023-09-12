@@ -17,12 +17,13 @@ function App() {
     const newReadTime = readTime + time;
     setReadTime(newReadTime);
     // console.log(newReadTime);
-    const remaining = bookmarks;
+    const remaining = bookmarks.filter(item => item.id !== id);
+    setBookmarks(remaining);
   };
   return (
     <>
       <Header></Header>
-      <div className="md:flex  max-w-7xl mx-auto">
+      <div className="md:flex max-w-7xl mx-auto gap-4">
         <Blogs
           handleAddToBookmark={handleAddToBookmark}
           handleBlogRead={handleBlogRead}

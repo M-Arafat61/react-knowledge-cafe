@@ -15,7 +15,7 @@ const Blog = ({ blog, handleAddToBookmark, handleBlogRead }) => {
   } = blog;
   return (
     <div>
-      <img className="w-full mb-4 " src={cover} alt="" />
+      <img className="w-full mb-4" src={cover} alt="" />
       <div className="flex justify-between">
         <div className="flex items-center">
           <img className="w-16" src={author_img} alt="" />
